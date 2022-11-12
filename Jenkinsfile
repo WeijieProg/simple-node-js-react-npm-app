@@ -8,8 +8,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                env.NODEJS_HOME = "${tool 'NodeJsv16.13.0'}"
-                env.PATH="${env.NODEJS_HOME}/bin:${env.PATH}"
                 sh 'npm --version'
                 sh 'npm install'
             }
