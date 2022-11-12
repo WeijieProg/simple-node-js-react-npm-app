@@ -6,7 +6,7 @@ pipeline {
         }
     }
     tools {
-        nodejs 'nodejs_16.13.0'
+        nodejs 'NodeJS_16.13.0'
     }
     stages {
         stage('Build') {
